@@ -10,3 +10,6 @@
 	path = bikoschool
 	url = git@github.com:jartigag/curso-biko-desarrollo-software-xp.git
 	branch = gh-pages
+[submodule "chess-blunders"]
+	path = chess-blunders
+	url = git@github.com:jartigag/chess-blunders.git
