@@ -4,5 +4,28 @@
 	<meta http-equiv="refresh" content="0; url=https://mnf.red/jartigag" />
 	<link rel="me" href="https://mastodon.social/@jartigag" />
 </head>
-<body></body>
+<body>
+  <script
+      data-token="p.eyJ1IjogIjE4OTA0NmVkLWY1NjYtNGU5MS1hNmU3LWU0MDcxOGNkZmYwZCIsICJpZCI6ICJkNTY1ZTA1Ny03NmEzLTQyZjgtYjA5Yi0yZWQ5MzU3Y2JlMmIifQ.ULpoiOdG6SX-hDtFRx6Hvzoz9fzUJjzhNlpNZxd86qc"
+      data-source="blog_events_v0" src="https://cdn.tinybird.co/static/js/t.js">
+  </script>
+  <script>
+      const currentDate = new Date(Date.now())
+      const theme = localStorage.getItem('color')
+      const data = {
+        'event': 'load',
+        'timestamp': currentDate.toISOString(),
+        'language': navigator.language || 'unknown',
+        'languages': JSON.stringify(navigator.languages) || 'unknown',
+        'useragent': navigator.userAgent || 'unknown',
+        'referrer': document.referrer || 'unknown',
+        'href': location.href || 'unknown',
+        'origin': location.origin || 'unknown',
+        'screenx': window.screen.width || 0,
+        'screeny': window.screen.height || 0,
+        'theme': theme
+      }
+      tinybird('pageload', data)
+  </script>
+</body>
 </html>
