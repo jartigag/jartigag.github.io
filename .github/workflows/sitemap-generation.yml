@@ -2,7 +2,7 @@ name: Generate sitemap
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths: [ '**.html', '**.pdf' ]
 
 jobs:
