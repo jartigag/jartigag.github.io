@@ -1,7 +1,3 @@
-[submodule "cv"]
-	path = cv
-	url = git@github.com:jartigag/pandoc-moderncv.git
-	branch = gh-pages
 [submodule "tfm"]
 	path = tfm
 	url = git@github.com:jartigag/tfm-clustering.git
