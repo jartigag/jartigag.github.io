@@ -7,7 +7,7 @@ jobs:
   foreach_pull:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           git config user.email "actions@users.noreply.github.com"
           git config user.name "foreach_pull gh action"
