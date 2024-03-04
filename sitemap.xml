@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://javier.artiga.es/</loc>
         <lastmod>2024-01-11T20:57:55+01:00</lastmod>
@@ -36,5 +36,4 @@
         <loc>https://javier.artiga.es/chess-blunders/</loc>
         <lastmod>2021-06-28T23:11:00+02:00</lastmod>
     </url>
-    </urlset>
-</xml>
+</urlset>
