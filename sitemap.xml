@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://javier.artiga.es/</loc>
-        <lastmod>2024-01-11T20:57:55+01:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/cv.pdf</loc>
-        <lastmod>2024-02-22T00:45:00+01:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/cv.json</loc>
-        <lastmod>2024-02-22T00:45:00+01:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/paper-tfg-javier_artiga_garijo.pdf</loc>
-        <lastmod>2023-05-04T21:55:04+02:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/tfm/</loc>
-        <lastmod>2020-07-23T00:00:00+02:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/notas/</loc>
-        <lastmod>2024-03-01T02:07:00+01:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/ea/</loc>
-        <lastmod>2018-04-22T11:12:00+02:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/bikoschool/</loc>
-        <lastmod>2022-01-09T10:55:00+02:00</lastmod>
-    </url>
-    <url>
-        <loc>https://javier.artiga.es/chess-blunders/</loc>
-        <lastmod>2021-06-28T23:11:00+02:00</lastmod>
-    </url>
+<url>
+<loc>https://javier.artiga.es/</loc>
+<lastmod>2024-03-09T16:40:01+01:00</lastmod>
+</url>
+<url>
+<loc>https://javier.artiga.es/cv.pdf</loc>
+<lastmod>2024-02-22T00:45:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://javier.artiga.es/paper-tfg-javier_artiga_garijo.pdf</loc>
+<lastmod>2023-05-04T21:55:04+02:00</lastmod>
+</url>
+<url>
+<loc>https://javier.artiga.es/cv/</loc>
+<lastmod>2023-05-10T20:22:31+02:00</lastmod>
+</url>
 </urlset>
