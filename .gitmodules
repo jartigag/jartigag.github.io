@@ -13,3 +13,6 @@
 	path = cv.json
 	url = git@github.com:jartigag/mnf.red.git
 	branch = json
+[submodule "football-entropy"]
+	path = football-entropy
+	url = git@github.com:jartigag/football-entropy.git
