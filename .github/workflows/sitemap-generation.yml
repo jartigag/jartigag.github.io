@@ -2,8 +2,8 @@ name: Generate sitemap
 
 on:
   push:
-    branches: [ master ]
-    paths: [ '**.html', '**.pdf' ]
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   sitemap_job:
