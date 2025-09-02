@@ -107,18 +107,28 @@
   </iframe>
 </div-->
 <script>
+<script>
   window.onload = function() {
-    var en = document.getElementByClassName('en-US')
-    var es = document.getElementByClassName('es-ES')
-    var lang = location.search || navigator.language || navigator.userLanguage;
-    if(lang.indexOf('es') !== -1) {
-      en.style.display = 'none';
-      es.style.display = 'block';
+    var en = document.getElementsByClassName('en-US');
+    var es = document.getElementsByClassName('es-ES');
+    var lang = navigator.language || navigator.userLanguage || 'es';
+    if (lang.indexOf('es') !== -1) {
+      for (var i = 0; i < en.length; i++) {
+        en[i].style.display = 'none';
+      }
+      for (var i = 0; i < es.length; i++) {
+        es[i].style.display = 'block';
+      }
     } else {
-      en.style.display = 'block';
-      es.style.display = 'none';
+      for (var i = 0; i < en.length; i++) {
+        en[i].style.display = 'block';
+      }
+      for (var i = 0; i < es.length; i++) {
+        es[i].style.display = 'none';
+      }
     }
   }
+</script>
 </script>
 <script
     defer src="https://unpkg.com/@tinybirdco/flock.js"
