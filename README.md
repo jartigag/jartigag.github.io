@@ -1,1 +1,1 @@
-<p align="center"><img src="https://github.com/user-attachments/assets/fecaecab-5041-4c24-941d-60aec77f3924" alt="javier.artiga.es (2025-09-02)"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/740e8d4f-0684-404a-bd37-248da52913ec" alt="javier.artiga.es (2025-09-17)"/></p>
