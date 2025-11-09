@@ -9,6 +9,7 @@
 [submodule "chess-blunders"]
 	path = chess-blunders
 	url = git@github.com:jartigag/chess-blunders.git
+	branch = main
 [submodule "cv.json"]
 	path = cv.json
 	url = git@github.com:jartigag/mnf.red.git
@@ -16,3 +17,4 @@
 [submodule "football-entropy"]
 	path = football-entropy
 	url = git@github.com:jartigag/football-entropy.git
+	branch = gh-pages
