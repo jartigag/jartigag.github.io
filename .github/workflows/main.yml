@@ -14,4 +14,4 @@ jobs:
           git submodule foreach git pull origin
           git add -A
           git commit -m "Update submodules" || exit 0
-          git push origin master
+          git push origin main
