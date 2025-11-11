@@ -196,25 +196,25 @@
 </div-->
 <script>
   getGET = () => {
-    var loc  = document.location.href;
-    if (loc.indexOf('?') > 0) {
-      GET = loc.split('?')[1].split('&');
-      const get = {};
-      for(let i = 0, l = GET.length; i < l; i++) {
-        const tmp   = GET[i].split('=');
-        get[tmp[0]] = unescape(decodeURI(tmp[1]));
-      }
-      return get;
-    }
-  }
-  window.onload = function() {
-    var get     = {};
-    get['lang'] = "";
     try {
-      get = getGET();
+      var loc  = document.location.href;
+      if (loc.indexOf('?') > 0) {
+        GET = loc.split('?')[1].split('&');
+        const get = {};
+        for(let i = 0, l = GET.length; i < l; i++) {
+          const tmp   = GET[i].split('=');
+          get[tmp[0]] = unescape(decodeURI(tmp[1]));
+        }
+        return get;
+      } else {
+        return {'lang': ""};
+      }
     } catch (err) {
       console.error("[!] window.onload:", err);
     }
+  }
+  window.onload = function() {
+    var get  = getGET();
     var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
     var en   = document.getElementsByClassName('en-US');
     var es   = document.getElementsByClassName('es-ES');
