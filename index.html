@@ -209,14 +209,8 @@
   }
   window.onload = function() {
     try {
-      try {
-        var get = typeof getGET === "function" ? getGET() : {};
-      catch {
-        var get = {};
-        if (lang.indexOf('es-ES') !== -1) {
-        var get['lang'] = 'es-ES';
-      }
-      var lang = get['lang'] || navigator.language || navigator.userLanguage;
+      var get  = typeof getGET === "function" ? getGET() : {};
+      var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
       var en   = document.getElementsByClassName('en-US');
       var es   = document.getElementsByClassName('es-ES');
       if (lang.indexOf('en-US') == -1) {
@@ -238,6 +232,7 @@
     } catch (err) {
       console.error("[!] window.onload:", err);
       return "";
+    }
   }
 </script>
 <script
