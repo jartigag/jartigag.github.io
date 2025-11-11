@@ -208,10 +208,10 @@
     }
   }
   window.onload = function() {
-    const get   = {};
+    var get     = {};
     get['lang'] = "";
     try {
-      var get = getGET();
+      get = getGET();
     } catch (err) {
       console.error("[!] window.onload:", err);
     }
