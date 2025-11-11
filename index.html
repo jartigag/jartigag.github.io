@@ -208,12 +208,12 @@
     }
   }
   window.onload = function() {
-    var get = {};
+    const get   = {};
+    get['lang'] = "";
     try {
       var get = getGET();
     } catch (err) {
       console.error("[!] window.onload:", err);
-      get['lang'] = "err";
     }
     var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
     var en   = document.getElementsByClassName('en-US');
