@@ -176,14 +176,14 @@
 <hr>
   <section id="refs" class="container">
 <div id="refs-es" lang="es" class="es-ES">
-  <p id="fn1"><a href="#ref1">[1]</a>: <a href="https://t.me/jartigag_doc/3">Graduado en Ingeniería en Tecnologías de Telecomunicación</a>.</p>
-  <p id="fn2"><a href="#ref2">[2]</a>: <a href="https://t.me/jartigag_doc/4">Máster Universitario en Análisis y Visualización de Datos Masivos</a>.</p>
-  <p id="fn3"><a href="#ref3">[3]</a>: <a href="https://t.me/jartigag_doc/7">Curso de desarrollo de software (BikoSchool) basado en metodologías ágiles y extreme programming</a>.</p>
+  <p id="fn1"><a href="#ref1">[1]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/3">Graduado en Ingeniería en Tecnologías de Telecomunicación</a>.</p>
+  <p id="fn2"><a href="#ref2">[2]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/4">Máster Universitario en Análisis y Visualización de Datos Masivos</a>.</p>
+  <p id="fn3"><a href="#ref3">[3]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/7">Curso de desarrollo de software (BikoSchool) basado en metodologías ágiles y extreme programming</a>.</p>
 </div>
 <div id="refs-en" lang="en" class="en-US">
-  <p id="fn1"><a href="#ref1">[1]</a>: <a href="https://t.me/jartigag_doc/3">BSc in Telecommunications Engineering</a>.</p>
-  <p id="fn2"><a href="#ref2">[2]</a>: <a href="https://t.me/jartigag_doc/4">MSc in Big Data Analysis and Visualization</a>.</p>
-  <p id="fn3"><a href="#ref3">[3]</a>: <a href="https://t.me/jartigag_doc/7">Software Development Course (BikoSchool) based on agile methodologies and extreme programming</a>.</p>
+  <p id="fn1"><a href="#ref1">[1]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/3">BSc in Telecommunications Engineering</a>.</p>
+  <p id="fn2"><a href="#ref2">[2]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/4">MSc in Big Data Analysis and Visualization</a>.</p>
+  <p id="fn3"><a href="#ref3">[3]</a>: <a href="https://t.me/+L8h3wCaCnsM0NDI8/7">Software Development Course (BikoSchool) based on agile methodologies and extreme programming</a>.</p>
 </div>
   </section>
 </div>
@@ -196,20 +196,31 @@
   </iframe>
 </div-->
 <script>
+  getGET = () => {
+    var loc  = document.location.href;
+    if (loc.indexOf('?') > 0) {
+      GET = loc.split('?')[1].split('&');
+      const get = {};
+      for(let i = 0, l = GET.length; i < l; i++) {
+        const tmp   = GET[i].split('=');
+        get[tmp[0]] = unescape(decodeURI(tmp[1]));
+      }
+      return get;
+  }}
   window.onload = function() {
-    var en = document.getElementsByClassName('en-US');
-    var es = document.getElementsByClassName('es-ES');
-    var lang = navigator.language || navigator.userLanguage || 'es';
+    var lang = getGET()['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
+    var en   = document.getElementsByClassName('en-US');
+    var es   = document.getElementsByClassName('es-ES');
     if (lang.indexOf('es') !== -1) {
       for (var i = 0; i < en.length; i++) {
         en[i].style.display = 'none';
       }
       for (var i = 0; i < es.length; i++) {
-        es[i].style.display = 'block'; //TODO: block? inline? flex?
+        es[i].style.display = 'block';
       }
     } else {
       for (var i = 0; i < en.length; i++) {
-        en[i].style.display = 'block'; //TODO: block? inline? flex?
+        en[i].style.display = 'block';
       }
       for (var i = 0; i < es.length; i++) {
         es[i].style.display = 'none';
