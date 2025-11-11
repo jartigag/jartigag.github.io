@@ -205,9 +205,11 @@
         get[tmp[0]] = unescape(decodeURI(tmp[1]));
       }
       return get;
-  }}
+    }
+  }
   window.onload = function() {
-    var lang = getGET()['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
+    var get  = typeof getGET === "function" ? getGET() : {};
+    var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
     var en   = document.getElementsByClassName('en-US');
     var es   = document.getElementsByClassName('es-ES');
     if (lang.indexOf('es-ES') !== -1) {
