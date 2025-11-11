@@ -209,28 +209,35 @@
   }
   window.onload = function() {
     try {
-      var get  = typeof getGET === "function" ? getGET() : {};
-      var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
+      try {
+        var get = typeof getGET === "function" ? getGET() : {};
+      catch {
+        var get = {};
+        if (lang.indexOf('es-ES') !== -1) {
+        var get['lang'] = 'es-ES';
+      }
+      var lang = get['lang'] || navigator.language || navigator.userLanguage;
       var en   = document.getElementsByClassName('en-US');
       var es   = document.getElementsByClassName('es-ES');
-      if (lang.indexOf('es-ES') !== -1) {
+      if (lang.indexOf('en-US') == -1) {
+        for (var i = 0; i < en.length; i++) {
+          en[i].style.display = 'none';
+        }
+      } else if (lang.indexOf('es-ES') == -1) {
+        for (var i = 0; i < es.length; i++) {
+          es[i].style.display = 'none';
+        }
+      } else { // default: es-ES = 'block', en-US = 'none'
         for (var i = 0; i < en.length; i++) {
           en[i].style.display = 'none';
         }
         for (var i = 0; i < es.length; i++) {
           es[i].style.display = 'block';
         }
-      } else {
-        for (var i = 0; i < en.length; i++) {
-          en[i].style.display = 'block';
-        }
-        for (var i = 0; i < es.length; i++) {
-          es[i].style.display = 'none';
-        }
       }
     } catch (err) {
-    console.error("[!] window.onload:", err);
-    return "";
+      console.error("[!] window.onload:", err);
+      return "";
   }
 </script>
 <script
