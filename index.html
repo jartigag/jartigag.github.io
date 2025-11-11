@@ -211,27 +211,31 @@
     try {
       var get  = typeof getGET === "function" ? getGET() : {};
       var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
-      var en   = document.getElementsByClassName('en-US');
-      var es   = document.getElementsByClassName('es-ES');
-      if (lang.indexOf('en-US') == -1) {
-        for (var i = 0; i < en.length; i++) {
-          en[i].style.display = 'none';
-        }
-      } else if (lang.indexOf('es-ES') == -1) {
-        for (var i = 0; i < es.length; i++) {
-          es[i].style.display = 'none';
-        }
-      } else { // default: es-ES = 'block', en-US = 'none'
-        for (var i = 0; i < en.length; i++) {
-          en[i].style.display = 'none';
-        }
-        for (var i = 0; i < es.length; i++) {
-          es[i].style.display = 'block';
-        }
-      }
     } catch (err) {
       console.error("[!] window.onload:", err);
-      return "";
+      var lang = {}
+    }
+    var en = document.getElementsByClassName('en-US');
+    var es = document.getElementsByClassName('es-ES');
+    if (lang.indexOf('en-US') == -1) {
+      for (var i = 0; i < en.length; i++) {
+        en[i].style.display = 'none';
+      }
+    }
+    if (lang.indexOf('es-ES') == -1) {
+      for (var i = 0; i < es.length; i++) {
+        es[i].style.display = 'none';
+      }
+    }
+    // if lang neither es-ES nor en-US:
+    if ( (lang.indexOf('es-ES') != -1)&&(lang.indexOf('en-US') != -1) ) {
+      // default display style: es-ES = 'block', en-US = 'none'
+      for (var i = 0; i < en.length; i++) {
+        en[i].style.display = 'none';
+      }
+      for (var i = 0; i < es.length; i++) {
+        es[i].style.display = 'block';
+      }
     }
   }
 </script>
