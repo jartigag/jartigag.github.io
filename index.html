@@ -208,15 +208,16 @@
     }
   }
   window.onload = function() {
+    var get = {};
     try {
-      var get  = typeof getGET === "function" ? getGET() : {};
-      var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
+      var get = getGET();
     } catch (err) {
       console.error("[!] window.onload:", err);
-      var lang = {}
+      get['lang'] = "err";
     }
-    var en = document.getElementsByClassName('en-US');
-    var es = document.getElementsByClassName('es-ES');
+    var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
+    var en   = document.getElementsByClassName('en-US');
+    var es   = document.getElementsByClassName('es-ES');
     if (lang.indexOf('en-US') == -1) {
       for (var i = 0; i < en.length; i++) {
         en[i].style.display = 'none';
