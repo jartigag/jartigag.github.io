@@ -216,13 +216,13 @@
     var lang = get['lang'] || navigator.language || navigator.userLanguage || 'es-ES';
     var en   = document.getElementsByClassName('en-US');
     var es   = document.getElementsByClassName('es-ES');
-    if (lang.indexOf('en') != -1) {
-      for (var i = 0; i < en.length; i++) {
-        en[i].style.display = 'none';
-      }
-    } else {
+    if (lang.indexOf('es') == -1) {
       for (var i = 0; i < es.length; i++) {
         es[i].style.display = 'none';
+      }
+    } else {
+      for (var i = 0; i < en.length; i++) {
+        en[i].style.display = 'none';
       }
     }
   }
