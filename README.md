@@ -1,3 +1,3 @@
-<p align="center"><img src="https://github.com/user-attachments/assets/89ce0515-8656-4647-bb7f-80e6e065b279" alt="javier.artiga.es lang=es useragent=firefox (2025-11-08)"/></p>
+<p align="center"><img src="2025.11.16 08_06_00 javier.artiga.es.png" alt="javier.artiga.es useragent=Mozilla_5.0_iPhone (2025-11-16)"/></p>
 
-<p align="center"><img src="https://github.com/user-attachments/assets/afcaed8b-1d95-41b1-aa19-ea20c228e23d" alt="javier.artiga.es lang=en useragent=brave (2025-09-17)"/></p>
+<p align="center"><img src="2025.11.16 08_06_00 javier.artiga.es_lang=en.png" alt="javier.artiga.es?lang=en.png useragent=Mozilla_5.0_Windows (2025-11-16)"/></p>
