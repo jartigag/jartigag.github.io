@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://javier.artiga.es/</loc>
-<lastmod>2025-11-16T08:29:45+01:00</lastmod>
+<lastmod>2025-11-20T00:03:13+01:00</lastmod>
 </url>
 <url>
 <loc>https://javier.artiga.es/cv.pdf</loc>
@@ -19,5 +19,13 @@
 <url>
 <loc>https://javier.artiga.es/cv/</loc>
 <lastmod>2025-09-04T00:19:41+02:00</lastmod>
+</url>
+<url>
+<loc>https://javier.artiga.es/el.peor/la.peli.html</loc>
+<lastmod>2025-11-25T02:50:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://javier.artiga.es/el.peor/la.peli/</loc>
+<lastmod>2025-11-25T02:40:39+01:00</lastmod>
 </url>
 </urlset>
